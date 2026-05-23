@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FDF6EE;
+}
+
+/* Navbar */
+nav {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    background-color: #1A0A00;
+    padding: 18px 50px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 2px solid #D4956A;
+}
+
+.nav-kiri {
+    display: flex;
+    font-size: 28px;
+    font-weight: bold;
+    color: #F5E8D0;
+}
+
+.nav-kanan {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+.nav-kanan a {
+    color: #C8B49A;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 18px;
+}
+
+.nav-kanan a:hover {
+    color: white;
+}
+
+/* Home */
+.Home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #FDF6EE;
+    padding: 60px 10%;
+    gap: 100px;
+}
+
+.Home-kiri {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.Home-kiri h2 {
+    font-size: 72px;
+    color: #1A0A00;
+    margin-bottom: 20px;
+}
+
+.Home-kiri p {
+    color: #6B5A4E;
+    max-width: 600px;
+    line-height: 1.8;
+    font-size: 24px;
+    margin-bottom: 35px;
+}
+
+/* Button */
+.Home a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    color: #F5EDE3;
+    background-color: #1C1410;
+    padding: 15px 30px;
+    width: fit-content;
+    border-radius: 14px;
+    transition: 0.3s;
+    font-size: 18px;
+}
+
+.Home a:hover {
+    background-color: #3b2418;
+    transform: scale(1.05);
+}
+
+/* Image */
+.Home-kanan {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+    width: 430px;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 7px solid white;
+    box-shadow: 0 0 30px rgba(0,0,0,0.25);
+    transition: 0.3s;
+}
+
+.img:hover {
+    transform: scale(1.05);
+}
+
+/* About */
+.About {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 25px;
+    padding: 100px 20px;
+    background-color: #f4e5d6;
+}
+
+.About h2 {
+    font-size: 55px;
+    color: #1A0A00;
+}
+
+.About p {
+    font-size: 24px;
+    color: #6B5A4E;
+}
+
+.About div {
+    display: flex;
+    gap: 15px;
+}
+
+.About div a {
+    text-decoration: none;
+    color: white;
+    background-color: #5d5d5d;
+    padding: 12px 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.About div a:hover {
+    background-color: #3f3f3f;
+    transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #808080;
+    padding: 20px;
+    color: white;
+    font-size: 18px;
+}
